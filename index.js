@@ -1,4 +1,5 @@
 // Write your solution in this file!
+<<<<<<< HEAD
 let driver = {};
 
 function updateDriverWithKeyAndValue(driver, key, value) {
@@ -29,3 +30,14 @@ function destructivelyDeleteFromDriverByKey(driver, key){
   return driver;
 }
 
+=======
+let driver = {key:value};
+
+function updateDriverWithKeyAndValue(driver, key, value){
+  let newDriver = { ...driver };
+  
+  newDriver[key] = value;
+  
+  return newDriver;
+}
+>>>>>>> bf2f5889c1162dfdb57b1d16a5d7632450c6a0e2
